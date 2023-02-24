@@ -1,0 +1,8 @@
+function SonsuzCarp(){
+    let carpım=1;
+    for(let i =0; i < arguments.length; i++){
+        carpım *= arguments[i];
+    }
+    console.log('Çarpım ='+carpım);
+}
+SonsuzCarp(14, 54, 39,46);

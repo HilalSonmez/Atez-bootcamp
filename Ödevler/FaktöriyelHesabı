@@ -1,0 +1,28 @@
+var sayi=6;
+ 
+var factHesap = function(x) { 
+
+    if(x == 0) { //Sayının " 0 " Kontrolü
+
+        return 1
+    } 
+    
+    else   if(sayi < 0) {  // Sayının Pozitif Kontrolü
+
+        console.log("Lütfen pozitif bir tamsayı atayınız!")
+    }
+
+    else if (typeof sayi == 'string'){  // Sayının String Kontrolü
+
+
+        console.log("Lütfen Sayı değeri atayınız!");
+
+    }
+        
+    else {  // Faktöriyel Hesabı
+
+        return x * factHesap(x - 1);
+    }
+}
+ 
+console.log("Sayı : "  +sayi+  " Faktöriyeli: "  + factHesap(sayi));
